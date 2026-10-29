@@ -5,142 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata Diri</title>
-
-    <style>
-        /* Pengaturan halaman */
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            padding: 30px;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: white;
-        }
-
-        /* ID untuk header */
-        #header {
-            background-color: #19b99c;
-            color: white;
-            text-align: center;
-            padding: 25px 10px;
-            border-radius: 20px 20px 0 0;
-        }
-
-        #header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        /* Class untuk navigasi */
-        .navigasi {
-            background-color: #fffafd;
-            text-align: center;
-            padding: 18px;
-            border-radius: 0 0 30px 30px;
-        }
-
-        .navigasi a {
-            color: #62518b;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 18px;
-        }
-
-        .navigasi a:hover {
-            text-decoration: underline;
-        }
-
-        /* Bagian biodata */
-        #konten {
-            background-color: #842b2b;
-            padding: 30px;
-        }
-
-        #konten h2 {
-            font-size: 32px;
-            margin-top: 5px;
-            margin-bottom: 30px;
-        }
-
-        .data-biodata {
-            font-size: 23px;
-            line-height: 1.6;
-        }
-
-        .data-biodata p {
-            margin-bottom: 28px;
-            overflow-wrap: anywhere;
-        }
-
-        /* Footer */
-        #footer {
-            background-color: #d0ef12;
-            color: black;
-            text-align: center;
-            padding: 15px;
-            border-radius: 0 0 20px 20px;
-        }
-
-        #footer h2 {
-            font-size: 26px;
-        }
-
-        /* Tampilan untuk HP */
-        @media (max-width: 600px) {
-            body {
-                padding: 15px;
-            }
-
-            #header h1 {
-                font-size: 28px;
-            }
-
-            #konten {
-                padding: 22px;
-            }
-
-            #konten h2 {
-                font-size: 27px;
-            }
-
-            .data-biodata {
-                font-size: 19px;
-            }
-
-            .navigasi a {
-                margin: 0 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Menu Navigasi -->
+    <!-- Header -->
+    <header id="header">
+        <h1>Biodata Diri</h1>
+    </header>
+
+    <!-- Navigasi -->
     <nav class="navigasi">
         <a href="index.html">Home</a>
         <a href="biodata.html">Biodata</a>
     </nav>
 
-    <!-- Bagian Biodata -->
+    <!-- Isi Biodata -->
     <main id="konten">
+        <div class="data-biodata" id="biodataMahasiswa">
 
-        <div class="data-biodata">
-            <p>Nama Lengkap: Najla Fakhriyah</p>
+            <p class="data-item" id="nama">
+                Nama Lengkap: [Nama lengkap kamu]
+            </p>
 
-            <p>NIM: 411242046</p>
+            <p class="data-item" id="nim">
+                NIM: [NIM kamu]
+            </p>
 
-            <p>Tempat, Tanggal Lahir: Jakarta, 20 Februari</p>
+            <p class="data-item" id="panggilan">
+                Nama Panggilan: [Nama panggilan kamu]
+            </p>
 
-            <p>Pendidikan: Mahasiswa Teknik Informatika Semester 4</p>
+            <p class="data-item" id="lahir">
+                Tempat, Tanggal Lahir: [Tempat, tanggal lahir]
+            </p>
+
+            <p class="data-item" id="umur">
+                Umur: [Umur kamu]
+            </p>
+
+            <p class="data-item" id="pendidikan">
+                Pendidikan: Mahasiswa Teknik Informatika
+            </p>
+
+            <p class="data-item" id="hobi">
+                Hobi: [Hobi kamu]
+            </p>
 
         </div>
     </main>
 
-    <!-- Bagian Footer -->
+    <!-- Footer -->
     <footer id="footer">
         <h2>Terima Kasih</h2>
     </footer>
