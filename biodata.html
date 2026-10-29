@@ -4,123 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulir Biodata</title>
+    <title>Biografi Tugas 3</title>
 
     <style>
+        /* Pengaturan halaman */
         * {
             box-sizing: border-box;
         }
 
         body {
             margin: 0;
+            padding: 30px;
             font-family: Arial, sans-serif;
-            background-color: #852b2b;
+            background-color: #f5f5f5;
+            color: white;
         }
 
-        /* Menggunakan ID */
+        /* ID untuk header */
         #header {
             background-color: #19b99c;
+            color: black;
             text-align: center;
-            padding: 25px;
+            padding: 25px 10px;
+            border-radius: 20px 20px 0 0;
         }
 
         #header h1 {
+            margin: 0;
             font-size: 36px;
-            margin: 10px 0 20px;
         }
 
-        /* Menggunakan Class */
+        /* Class untuk navigasi */
+        .navigasi {
+            background-color: #fffafd;
+            text-align: center;
+            padding: 18px;
+            border-radius: 0 0 30px 30px;
+        }
+
         .navigasi a {
-            color: black;
+            color: #62518b;
             text-decoration: none;
             font-weight: bold;
-            margin: 0 12px;
+            margin: 0 18px;
         }
 
         .navigasi a:hover {
             text-decoration: underline;
         }
 
+        /* Bagian biodata */
         #konten {
-            padding: 35px 15px;
-            min-height: 500px;
+            background-color: #842b2b;
+            padding: 30px;
         }
 
-        .kartu-form {
-            background-color: white;
-            max-width: 600px;
-            margin: auto;
-            padding: 25px;
-            border-radius: 10px;
+        #konten h2 {
+            font-size: 32px;
+            margin-top: 5px;
+            margin-bottom: 30px;
         }
 
-        .kartu-form h2 {
-            text-align: center;
-            color: #147c6c;
+        .data-biodata {
+            font-size: 23px;
+            line-height: 1.6;
         }
 
-        .form-group {
-            margin-bottom: 16px;
+        .data-biodata p {
+            margin-bottom: 28px;
+            overflow-wrap: anywhere;
         }
 
-        .form-group label {
-            display: block;
-            margin-bottom: 7px;
-            font-weight: bold;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #aaa;
-            border-radius: 5px;
-        }
-
-        .jenis-kelamin label {
-            display: inline;
-            font-weight: normal;
-            margin-right: 15px;
-        }
-
-        .jenis-kelamin input {
-            width: auto;
-        }
-
-        .tombol {
-            padding: 11px 22px;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            background-color: #19a88d;
-            cursor: pointer;
-        }
-
-        .tombol-reset {
-            background-color: #777;
-        }
-
-        #pesan {
-            color: #147c6c;
-            font-weight: bold;
-        }
-
+        /* Footer */
         #footer {
             background-color: #d0ef12;
+            color: black;
             text-align: center;
-            padding: 18px;
-            font-size: 20px;
-            font-weight: bold;
+            padding: 15px;
+            border-radius: 0 0 20px 20px;
         }
 
+        #footer h2 {
+            font-size: 26px;
+        }
+
+        /* Tampilan untuk HP */
         @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
             #header h1 {
                 font-size: 28px;
             }
 
-            .kartu-form {
-                padding: 18px;
+            #konten {
+                padding: 22px;
+            }
+
+            #konten h2 {
+                font-size: 27px;
+            }
+
+            .data-biodata {
+                font-size: 19px;
+            }
+
+            .navigasi a {
+                margin: 0 10px;
             }
         }
     </style>
@@ -128,114 +119,40 @@
 
 <body>
 
+    <!-- Bagian Header -->
     <header id="header">
-        <h1>Formulir Biodata</h1>
-
-        <nav class="navigasi">
-            <a href="index.html">Home</a>
-            <a href="biodata.html">Biodata</a>
-        </nav>
+        <h1>Biografi Tugas 3</h1>
     </header>
 
+    <!-- Menu Navigasi -->
+    <nav class="navigasi">
+        <a href="index.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+    </nav>
+
+    <!-- Bagian Biodata -->
     <main id="konten">
-        <section class="kartu-form">
-            <h2>Formulir Data Diri</h2>
-            <p>Silakan isi biodata dengan lengkap.</p>
+        <h2>Biodata Diri</h2>
 
-            <form id="formBiodata">
+        <div class="data-biodata">
+            <p>Nama Lengkap: [Nama lengkap kamu]</p>
 
-                <div class="form-group">
-                    <label for="nama">Nama Lengkap</label>
-                    <input type="text" id="nama" name="nama"
-                        placeholder="Masukkan nama lengkap" required>
-                </div>
+            <p>Nama Panggilan: [Nama panggilan kamu]</p>
 
-                <div class="form-group">
-                    <label for="nim">NIM</label>
-                    <input type="text" id="nim" name="nim"
-                        placeholder="Masukkan NIM" required>
-                </div>
+            <p>Tempat, Tanggal Lahir: [Tempat, tanggal lahir]</p>
 
-                <div class="form-group">
-                    <label for="tanggal">Tanggal Lahir</label>
-                    <input type="date" id="tanggal" name="tanggal"
-                        required>
-                </div>
+            <p>Umur: [Umur kamu]</p>
 
-                <div class="form-group">
-                    <label>Jenis Kelamin</label>
-                    <div class="jenis-kelamin">
-                        <label>
-                            <input type="radio" name="jk"
-                                value="Laki-laki" required>
-                            Laki-laki
-                        </label>
+            <p>Pendidikan: Mahasiswa Teknik Informatika Semester 4</p>
 
-                        <label>
-                            <input type="radio" name="jk"
-                                value="Perempuan">
-                            Perempuan
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="alamat">Alamat</label>
-                    <textarea id="alamat" name="alamat"
-                        rows="3" placeholder="Masukkan alamat"
-                        required></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email"
-                        placeholder="Masukkan email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="prodi">Program Studi</label>
-                    <select id="prodi" name="prodi" required>
-                        <option value="">Pilih program studi</option>
-                        <option value="Teknik Informatika">
-                            Teknik Informatika
-                        </option>
-                        <option value="Sistem Informasi">
-                            Sistem Informasi
-                        </option>
-                        <option value="Manajemen">Manajemen</option>
-                        <option value="Akuntansi">Akuntansi</option>
-                    </select>
-                </div>
-
-                <button type="submit" class="tombol"
-                    id="tombolSimpan">Simpan</button>
-
-                <button type="reset"
-                    class="tombol tombol-reset">Reset</button>
-
-                <p id="pesan"></p>
-            </form>
-        </section>
+            <p>Hobi: [Hobi kamu]</p>
+        </div>
     </main>
 
+    <!-- Bagian Footer -->
     <footer id="footer">
-        Footer
+        <h2>Terima Kasih</h2>
     </footer>
-
-    <script>
-        document.getElementById("formBiodata")
-            .addEventListener("submit", function(event) {
-                event.preventDefault();
-
-                document.getElementById("pesan").textContent =
-                    "Formulir berhasil diisi!";
-            });
-
-        document.getElementById("formBiodata")
-            .addEventListener("reset", function() {
-                document.getElementById("pesan").textContent = "";
-            });
-    </script>
 
 </body>
 </html>
