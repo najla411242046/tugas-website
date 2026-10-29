@@ -55,3 +55,37 @@ footer {
     color: white;
 }
 
+
+/* Class untuk data biodata */
+.data-biodata {
+    color: white;
+    font-size: 23px;
+    line-height: 1.6;
+}
+
+/* Class untuk setiap informasi */
+.data-item {
+    margin-bottom: 25px;
+    color: white;
+}
+
+/* ID untuk bagian NIM */
+#nim {
+    color: white;
+}
+
+/* ID untuk seluruh biodata */
+#biodataMahasiswa {
+    color: white;
+}
+
+/* Menu Home dan Biodata */
+.navigasi a {
+    color: white;
+    background-color: #842b2b;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 8px;
+}
