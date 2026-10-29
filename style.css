@@ -34,3 +34,24 @@ footer {
 }
 
 
+/* Mengubah tulisan biodata menjadi putih */
+#konten {
+    color: white;
+}
+
+/* Mengubah tulisan Home dan Biodata menjadi putih */
+.navigasi a {
+    color: white;
+    background-color: #842b2b;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.navigasi a:hover {
+    background-color: #19b99c;
+    color: white;
+}
+
