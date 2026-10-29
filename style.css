@@ -96,3 +96,19 @@ body {
         font-size: 18px;
     }
 }
+
+
+/* Mengubah tulisan di bagian konten menjadi putih */
+#konten {
+    color: white;
+}
+
+#konten p,
+body > p {
+    color: white;
+}
+
+/* Tulisan Home dan Biodata */
+.navigasi a {
+    color: white;
+}
