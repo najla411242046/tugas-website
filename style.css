@@ -81,22 +81,6 @@ body {
     margin: 10px;
 }
 
-/* Tampilan HP */
-@media (max-width: 600px) {
-    #header h1,
-    #header h2 {
-        font-size: 28px;
-    }
-
-    #konten {
-        padding: 20px;
-    }
-
-    .data-biodata {
-        font-size: 18px;
-    }
-}
-
 
 /* Mengubah tulisan di bagian konten menjadi putih */
 #konten {
