@@ -6,21 +6,23 @@
 
 body {
     margin: 0;
+    padding: 30px;
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: #f5f5f5;
 }
 
-/* Header untuk Home dan Biodata */
+/* Header hijau toska */
 #header {
     background-color: #19b99c;
-    color: black;
+    color: white;
     text-align: center;
-    padding: 30px 15px;
+    padding: 25px;
+    border-radius: 20px 20px 0 0;
 }
 
-#header h1,
-#header h2 {
-    margin: 10px 0;
+#header h1 {
+    margin: 0;
+    font-size: 36px;
 }
 
 /* Navigasi */
@@ -35,90 +37,90 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 10px 20px;
     margin: 0 10px;
 }
 
 .navigasi a:hover {
     background-color: #19b99c;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
-/* Konten Home */
+/* Bagian isi biodata */
 #konten {
     background-color: #842b2b;
     color: white;
-    padding: 25px;
+    padding: 35px;
     min-height: 400px;
 }
 
-#konten p {
-    line-height: 1.6;
-}
-
-/* Konten Biodata */
 .data-biodata {
+    max-width: 950px;
+    margin: 0 auto;
     color: white;
     font-size: 23px;
     line-height: 1.6;
 }
 
-.data-item {
-    color: white;
+/* Membuat setiap baris sejajar */
+.baris-biodata {
+    display: grid;
+    grid-template-columns: 260px 20px minmax(0, 1fr);
+    column-gap: 5px;
+    align-items: start;
     margin-bottom: 25px;
 }
 
-/* Footer */
+.label-biodata,
+.titik-dua,
+.isi-biodata {
+    color: white;
+}
+
+.isi-biodata {
+    overflow-wrap: anywhere;
+}
+
+/* Footer hijau terang */
 #footer {
     background-color: #d0ef12;
     color: black;
     text-align: center;
-    padding: 18px;
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
 }
 
-#footer h1,
 #footer h2 {
     margin: 10px;
+    font-size: 26px;
 }
 
-
-/* Mengubah tulisan di bagian konten menjadi putih */
-#konten {
-    color: white;
-}
-
-#konten p,
-body > p {
-    color: white;
-}
-
-/* Tulisan Home dan Biodata */
-.navigasi a {
-    color: white;
-}
-
-
-/* Merapikan susunan biodata */
-.data-biodata {
-    color: white;
-    font-size: 22px;
-    line-height: 1.6;
-}
-
-.data-item {
-    display: grid;
-    grid-template-columns: 260px 20px 1fr;
-    gap: 5px;
-    margin-bottom: 22px;
-    color: white;
-    align-items: start;
-}
-
-/* Menyesuaikan layar HP */
+/* Tampilan HP */
 @media (max-width: 600px) {
-    .data-item {
-        grid-template-columns: 1fr 15px 1.2fr;
+    body {
+        padding: 12px;
+    }
+
+    #header h1 {
+        font-size: 28px;
+    }
+
+    .navigasi a {
+        margin: 0 5px;
+        padding: 10px;
+    }
+
+    #konten {
+        padding: 20px 15px;
+    }
+
+    .data-biodata {
         font-size: 16px;
-        gap: 3px;
+    }
+
+    .baris-biodata {
+        grid-template-columns: 145px 12px minmax(0, 1fr);
+        column-gap: 3px;
+        margin-bottom: 20px;
     }
 }
