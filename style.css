@@ -112,3 +112,29 @@ body > p {
 .navigasi a {
     color: white;
 }
+
+
+/* Merapikan susunan biodata */
+.data-biodata {
+    color: white;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.data-item {
+    display: grid;
+    grid-template-columns: 260px 20px 1fr;
+    gap: 5px;
+    margin-bottom: 22px;
+    color: white;
+    align-items: start;
+}
+
+/* Menyesuaikan layar HP */
+@media (max-width: 600px) {
+    .data-item {
+        grid-template-columns: 1fr 15px 1.2fr;
+        font-size: 16px;
+        gap: 3px;
+    }
+}
