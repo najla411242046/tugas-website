@@ -4,31 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Saya</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Biodata Diri</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        header {
+            background-color: #19b69e;
+            text-align: center;
+            padding: 12px;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav {
+            background-color: #842b2b;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 22px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d5f000;
+        }
+
+        main {
+            background-color: #842b2b;
+            min-height: 325px;
+            padding: 50px 20px;
+        }
+
+        .biodata {
+            width: 700px;
+            max-width: 100%;
+            margin: auto;
+            line-height: 2;
+        }
+
+        .biodata table {
+            border-spacing: 0;
+            font-size: 16px;
+        }
+
+        .biodata td {
+            padding: 8px;
+        }
+
+        footer {
+            background-color: #d5f000;
+            color: black;
+            text-align: center;
+            padding: 18px;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
 
-    <header id="header">
-        <h1>Website saya</h1>
+    <header>
+        <h1>Biodata Diri</h1>
     </header>
 
-    <nav class="navigasi">
+    <nav>
         <a href="index.html">Home</a>
         <a href="biodata.html">Biodata</a>
     </nav>
 
-    <main id="konten">
-        <p>
-            Pengenalan HTML dan CSS merupakan dasar dalam pembuatan website.
-            HTML digunakan untuk membuat struktur halaman web, sedangkan CSS
-            digunakan untuk mengatur tampilan, warna, ukuran teks, dan tata
-            letak agar website terlihat lebih menarik dan mudah dibaca.
-        </p>
+    <main>
+        <div class="biodata">
+
+            <table>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td>:</td>
+                    <td>Najla Fakhriyah</td>
+                </tr>
+
+                <tr>
+                    <td>NIM</td>
+                    <td>:</td>
+                    <td>411242046</td>
+                </tr>
+
+                <tr>
+                    <td>Tempat, Tanggal Lahir</td>
+                    <td>:</td>
+                    <td>Jakarta, 20 Februari</td>
+                </tr>
+
+                <tr>
+                    <td>Pendidikan</td>
+                    <td>:</td>
+                    <td>Mahasiswa Teknik Informatika</td>
+                </tr>
+            </table>
+
+        </div>
     </main>
 
-    <footer id="footer">
-        <h1>Footer</h1>
+    <footer>
+        Terima Kasih
     </footer>
 
 </body>
